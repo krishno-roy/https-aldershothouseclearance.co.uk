@@ -88,7 +88,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}a
+      {/* Mobile Menu */}
       <div
         className={`md:hidden fixed top-0 right-0 h-full w-64 bg-green-50 transform ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
