@@ -1,5 +1,3 @@
-"use client"; // Mark this component as a Client Component
-
 import React, { useState } from "react";
 import { FaPhoneAlt, FaBars, FaTimes, FaPhoneSquareAlt } from "react-icons/fa";
 import Link from "next/link";
@@ -9,7 +7,7 @@ import Image from "next/image";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname(); // Get the current route path
-  const phoneNumber = "01738612417"; // Define the phone number here
+  const phoneNumber = "07969868115"; // Define the phone number here
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -90,9 +88,9 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu */}a
       <div
-        className={`md:hidden fixed top-0 right-0 h-full w-64 bg-gray-200 transform ${
+        className={`md:hidden fixed top-0 right-0 h-full w-64 bg-green-50 transform ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-in-out shadow-lg p-6 z-50`}
       >
