@@ -1,3 +1,5 @@
+"use client"; // Mark this component as a Client Component
+
 import React, { useState } from "react";
 import { FaPhoneAlt, FaBars, FaTimes, FaPhoneSquareAlt } from "react-icons/fa";
 import Link from "next/link";

@@ -53,7 +53,7 @@ const FAQ = () => {
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full flex justify-between items-center p-4 text-left font-semibold text-gray-800"
+                className="w-full flex justify-between items-center p-4 text-left font-semibold text-black"
               >
                 <div className="flex items-center gap-2">
                   <span className="text-xl">

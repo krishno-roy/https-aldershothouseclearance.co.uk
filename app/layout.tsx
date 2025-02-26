@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "aldershothouseclearance",
+  title: "House Clearance Aldershot",
   description: "aldershothouseclearance",
 };
 
