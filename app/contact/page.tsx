@@ -6,7 +6,6 @@ import emailjs from "emailjs-com"; // Import EmailJS
 
 
 
-
 // Define the type for the form data
 interface FormData {
   name: string;

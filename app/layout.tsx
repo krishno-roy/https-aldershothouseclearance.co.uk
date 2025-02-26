@@ -15,10 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: {
-    default: "aldershot house clearance",
-    template: "%s - House Clearance Aldershot ",
-  },
+  title: "aldershothouseclearance",
   description: "aldershothouseclearance",
 };
 
