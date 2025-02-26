@@ -1,5 +1,15 @@
 import React from "react";
 import Image from "next/image";
+import { Metadata } from "next";
+
+
+export const metadata : Metadata ={
+ title:"About",
+ description:"Wellcome About Page"
+} 
+
+
+
 const About = () => {
   return (
     <div>

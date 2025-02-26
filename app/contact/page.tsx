@@ -1,8 +1,11 @@
-"use client"; // Mark this component as a Client Component
 
+"use client";
 import React, { useState, ChangeEvent, FormEvent } from "react";
 import Image from "next/image";
 import emailjs from "emailjs-com"; // Import EmailJS
+
+
+
 
 // Define the type for the form data
 interface FormData {
@@ -143,7 +146,7 @@ const Contact: React.FC = () => {
             <div className="text-center">
               <button
                 type="submit"
-                className="bg-[#3E3F43] text-white px-6 py-2 rounded-lg text-lg font-semibold hover:bg-[#3E3F43] transition-all duration-300 w-full"
+                className="bg-[#A4DC54] text-white px-6 py-2 rounded-lg text-lg font-semibold hover:bg-[#A4DC54] transition-all duration-300 w-full"
               >
                 Send
               </button>
