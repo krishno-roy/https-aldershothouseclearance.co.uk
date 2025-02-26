@@ -2,12 +2,14 @@
 
 import React, { useState, ChangeEvent, FormEvent } from "react";
 import Image from "next/image";
+import emailjs from "emailjs-com"; // Import EmailJS
 
 // Define the type for the form data
 interface FormData {
   name: string;
   email: string;
   message: string;
+  [key: string]: string; // Add an index signature
 }
 
 const Contact: React.FC = () => {
@@ -32,9 +34,24 @@ const Contact: React.FC = () => {
   // Handle form submission
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("Form Data Submitted:", formData);
-    alert("Thank you for contacting us! We'll get back to you soon.");
-    setFormData({ name: "", email: "", message: "" }); // Reset form
+
+    // Replace these with your actual EmailJS service ID, template ID, and user ID
+    const serviceID = "krishno"; // Your service ID
+    const templateID = "template_tn37see"; // Your template ID
+    const userID = "81j2LH87ysHUxp4EJ"; // Your user ID (public key)
+
+    // Send the email using EmailJS
+    emailjs
+      .send(serviceID, templateID, formData, userID)
+      .then((response) => {
+        console.log("Email successfully sent!", response);
+        alert("Thank you for contacting us! We'll get back to you soon.");
+        setFormData({ name: "", email: "", message: "" }); // Reset form
+      })
+      .catch((error) => {
+        console.error("Failed to send email:", error);
+        alert("Failed to send the message. Please try again later.");
+      });
   };
 
   return (
