@@ -58,6 +58,8 @@ const Contact: React.FC = () => {
 
   return (
     <div>
+      <title>Contact Us - aldershothouseclearance</title>
+
       <div className="relative h-40 sm:h-60 md:h-96 lg:h-70">
         <Image
           src="/bracknellmanandvan.jpg"

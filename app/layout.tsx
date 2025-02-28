@@ -17,9 +17,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: {
     default: "Aldershot House Clearance",
-    template:"%s-aldershothouseclearance"
+    template: "%s-aldershothouseclearance",
   },
-  description: "aldershothouseclearance",
+  description: "Aldershot House Clearance",
 };
 
 export default function RootLayout({
